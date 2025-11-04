@@ -19,7 +19,7 @@ Incluye secciones como:
 - **Contacto y Redes Sociales**
 
 ## 🧱 Estructura del Proyecto
-
+```
 📂 FRENA/
 ├── 📄 index.html
 ├── 🎨 style.css
@@ -31,7 +31,7 @@ Incluye secciones como:
 │ ├── tiktok.png
 │ └── banner-frena.jpg
 └── 📘 README.md
-
+```
 ## 🧩 Tecnologías Utilizadas
 
 - **HTML5** → estructura y contenido del sitio  
@@ -40,13 +40,13 @@ Incluye secciones como:
 - **Git & GitHub** → control de versiones y documentación del proyecto
 
 ## 🎨 Paleta de Colores
-
+```
 | Color | Descripción | Código |
 |-------|--------------|--------|
 | Gris Asfalto | Fondo principal | `#1c1c1c` |
 | Amarillo Vial | Detalles, bordes y títulos | `#ffcc00` |
 | Blanco | Texto general | `#ffffff` |
-
+```
 
 
 ## 🚀 Cómo Ejecutarlo Localmente
@@ -56,16 +56,12 @@ Incluye secciones como:
    git clone https://github.com/tuusuario/FRENA.git
 Abre la carpeta del proyecto:
 
-bash
-Copiar código
 cd FRENA
 Abre el archivo principal:
 
-bash
-Copiar código
 index.html
 Puedes abrirlo directamente en tu navegador o usar un servidor local como Live Server (VS Code).
-```
+
 👥 Autor
 Daniel Santiago González Hernández
 📍 Campus Bucaramanga
