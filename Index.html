@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIA Cúcuta FRENA S.A.S</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -13,110 +13,118 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#inicio">
-                    <img src="./Img/logo.png" alt="Logo FRENA">
-                </a>
+                <a href="#inicio"><img src="./img/Logo.png" alt="Logo FRENA"></a>
             </div>
+
+            <button class="menu-toggle">☰</button>
+
             <nav>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#estructura">Estructura</a></li>
-                    <li><a href="#valores">Valores</a></li>
-                    <li><a href="#politica-calidad">Política de Calidad</a></li>
-                    <li><a href="#politica-imparcialidad">Imparcialidad</a></li>
-                    <li><a href="#alcance">Alcance</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#institucional">Institucional</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Inicio -->
+    <!-- Hero -->
     <section id="inicio" class="hero">
         <h1>CENTRO INTEGRAL DE ATENCIÓN CÚCUTA FRENA S.A.S</h1>
-        <p>Promoviendo la vida y la seguridad vial con compromiso, calidad y responsabilidad.</p>
+        <p>Formamos conductores responsables y promovemos la seguridad vial en todo el país.</p>
     </section>
 
-    <!-- Estructura organizacional -->
-    <section id="estructura" class="content-section">
-        <h2>Estructura Organizacional</h2>
+    <!-- Servicios -->
+    <section id="servicios" class="content-section">
+        <h2>Servicios</h2>
         <ul>
-            <li>Gestión Directiva</li>
-            <li>Gestión de la Mejora</li>
-            <li>Gestión Estratégica y Misional</li>
-            <li>Capacitación a Infractores de Tránsito</li>
-            <li>Gestión de Soporte</li>
-            <li>Gestión del Talento Humano</li>
-            <li>Gestión Administrativa</li>
+            <li>Capacitación para infractores de tránsito</li>
+            <li>Charlas de sensibilización y educación vial</li>
+            <li>Asesoría en normatividad y seguridad vial</li>
         </ul>
     </section>
 
-    <!-- Valores Corporativos -->
-    <section id="valores" class="content-section">
-        <h2>Valores Corporativos</h2>
-        <p>En CIA CÚCUTA FRENA S.A.S sensibilizamos infractores de tránsito para que sean actores viales conocedores y
-            cumplidores de la normatividad vial, por medio de un talento humano adecuado que garantiza:</p>
-        <ul>
-            <li>✔ La mejora continua de nuestros procesos y sistema de gestión.</li>
-            <li>✔ La satisfacción de nuestros usuarios y cumplimiento de los requisitos de nuestras partes interesadas.
-            </li>
-        </ul>
+    <!-- Horarios -->
+    <section id="horarios" class="content-section">
+        <h2>Horarios de Cursos</h2>
+        <div class="accordion">
+            <button class="accordion-btn">Ver horarios</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>1er curso: 8:30 AM - 10:30 AM</li>
+                    <li>2do curso: 9:30 AM - 11:30 AM</li>
+                    <li>3er curso: 10:30 AM - 12:30 PM</li>
+                    <li>4to curso: 11:30 AM - 1:30 PM</li>
+                    <li>5to curso: 12:30 PM - 2:30 PM</li>
+                    <li>6to curso: 1:30 PM - 3:30 PM</li>
+                    <li>7mo curso: 2:30 PM - 4:30 PM</li>
+                    <li>8vo curso: 3:30 PM - 5:30 PM</li>
+                    <li>9no curso: 4:30 PM - 6:10 PM</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <!-- Política de Calidad -->
-    <section id="politica-calidad" class="content-section">
-        <h2>Política de Calidad</h2>
-        <ul>
-            <li>➔ Ser promotores de la vida y la seguridad vial mediante la calidad en los contenidos y metodologías.
-            </li>
-            <li>➔ Asegurar un excelente servicio con una satisfacción superior al 90%.</li>
-            <li>➔ Dar a conocer los servicios prestados por CIA CÚCUTA FRENA S.A.S en Cúcuta.</li>
-            <li>➔ Lograr la sostenibilidad operativa de la organización.</li>
-        </ul>
-    </section>
+    <!-- Sección Institucional -->
+    <section id="institucional" class="content-section">
+        <h2>Información Institucional</h2>
 
-    <!-- Política de Imparcialidad -->
-    <section id="politica-imparcialidad" class="content-section">
-        <h2>Política de Imparcialidad</h2>
-        <p>Para la prestación de servicio a los infractores del código de tránsito, se excluye el numeral 8.3 (Diseño y
-            desarrollo) de la norma NTC ISO 9001:2015, dado que nos basamos en especificaciones legales definidas por la
-            legislación aplicable.</p>
-        <p>También se excluye el numeral 7.1.5.2 (Medición y Calibración de recursos), ya que no utilizamos equipos que
-            requieran calibración para determinar la conformidad del servicio.</p>
-    </section>
+        <div class="accordion">
+            <button class="accordion-btn">Gestión Directiva</button>
+            <div class="accordion-content">
+                <p>FRENA promueve una gestión directiva basada en la mejora continua, el liderazgo estratégico y el
+                    cumplimiento de los objetivos misionales.</p>
+            </div>
 
-    <!-- Alcance del Sistema de Gestión -->
-    <section id="alcance" class="content-section">
-        <h2>Alcance del Sistema de Gestión</h2>
-        <p>CIA CÚCUTA FRENA S.A.S ha decidido incluir dentro de su sistema de gestión de calidad el siguiente alcance:
-        </p>
-        <p>“Sensibilización de infractores de tránsito, promoviendo la seguridad vial, la educación ciudadana y el
-            cumplimiento de las normas establecidas en el Código Nacional de Tránsito”.</p>
+            <button class="accordion-btn">Política de Calidad</button>
+            <div class="accordion-content">
+                <p>Ser promotores de la vida y la seguridad vial, asegurar un excelente servicio, dar a conocer los
+                    servicios prestados y garantizar la sostenibilidad operativa de la organización.</p>
+            </div>
+
+            <button class="accordion-btn">Política de Imparcialidad</button>
+            <div class="accordion-content">
+                <p>El servicio se presta conforme a la legislación vigente, excluyendo numerales de diseño y calibración
+                    de la norma NTC ISO 9001:2015 no aplicables a nuestras operaciones.</p>
+            </div>
+
+            <button class="accordion-btn">Gestión del Talento Humano</button>
+            <div class="accordion-content">
+                <p>Contamos con un equipo profesional y comprometido con la formación de infractores y la promoción de
+                    una cultura vial segura.</p>
+            </div>
+
+            <button class="accordion-btn">Valores Corporativos</button>
+            <div class="accordion-content">
+                <p>Compromiso, respeto, transparencia, responsabilidad y vocación de servicio son los pilares que
+                    definen nuestra labor institucional.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="contact-section">
         <h2>Contacto</h2>
-        <p><strong>Dirección:</strong> Avenida Gran Colombia #6E-47, La Riviera</p>
-        <p><strong>Teléfono:</strong> 3002103525</p>
+        <p>Dirección: Avenida Gran Colombia #6E-47, La Riviera</p>
+        <p>Teléfono: 3002103525</p>
+
         <div class="social-links">
-            <a href="https://www.facebook.com/share/1A4F4Gdqn8/" target="_blank">
-                <img src="./Img/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/ciacucutafrenasas?utm_source=qr&igsh=MXYxZnhvYmdndWwwZQ=="
-                target="_blank">
-                <img src="./Img/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://www.tiktok.com/@ciacucutafrenasas?_t=8py4vHYlcF3&_r=1" target="_blank">
-                <img src="./Img/tik-tok.png" alt="TikTok">
-            </a>
+            <a href="https://www.facebook.com/share/1A4F4Gdqn8/" target="_blank"><img src="./Img/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com/ciacucutafrenasas" target="_blank"><img src="./Img/instagram.png"
+                    alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@ciacucutafrenasas" target="_blank"><img src="./Img/tik-tok.png"
+                    alt="TikTok"></a>
         </div>
     </section>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 CIA CÚCUTA FRENA S.A.S. Todos los derechos reservados.</p>
+        <p>© 2025 CIA CÚCUTA FRENA S.A.S - Todos los derechos reservados</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
-</html>
+</html
