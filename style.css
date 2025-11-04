@@ -7,197 +7,150 @@
 
 html,
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     color: #fff;
-    background-color: #2b2b2b; /* Asfalto */
-    line-height: 1.5;
+    background-color: #1c1c1c;
+    /* Asfalto oscuro */
+    line-height: 1.6;
     scroll-behavior: smooth;
 }
 
 /* ===== Layout general ===== */
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-}
-
-h1, h2, h3 {
-    color: #FFD000; /* Amarillo */
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 /* ===== Navegación ===== */
 header {
     position: sticky;
     top: 0;
-    background: #1f1f1f; /* Asfalto más oscuro */
-    border-bottom: 2px solid #FFD000;
-    z-index: 10;
+    background: #333;
+    /* gris asfalto */
+    border-bottom: 4px solid #ffcc00;
+    z-index: 100;
 }
 
-.container {
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #FFD000;
+.logo img {
+    height: 60px;
+    width: auto;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FFD000;
+    color: #ffcc00;
 }
 
 /* ===== Hero ===== */
 .hero {
-    background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)),
-        url('img/hero-bg.jpg') center/cover no-repeat;
+    background: url('./Img/banner-frena.jpg') center/cover no-repeat;
     text-align: center;
     padding: 5rem 1rem;
+    color: #fff;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 2.8rem;
+    color: #ffcc00;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: #f5f5f5;
-}
-
-/* ===== Botones ===== */
-.btn {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.btn {
-    background: #FFD000;
-    color: #2b2b2b;
-}
-
-.btn:hover {
-    background: #e5bf00;
-    transform: scale(1.05);
-}
-
-/* ===== Servicios ===== */
-.section {
-    padding: 3rem 1rem;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.service-card {
-    background: #1f1f1f;
-    border: 1px solid #FFD000;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.service-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    background: #2f2f2f;
-}
-
-/* ===== Horarios ===== */
-.horarios ul {
-    list-style: none;
-    padding: 0;
+    font-size: 1.2rem;
+    max-width: 700px;
     margin: 0 auto;
-    max-width: 600px;
 }
 
-.horarios li {
-    background: #1f1f1f;
-    border: 1px solid #FFD000;
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 6px;
-    transition: background 0.3s;
+/* ===== Secciones de contenido ===== */
+.content-section {
+    padding: 3rem 1rem;
+    background-color: #2a2a2a;
+    margin-top: 1rem;
+    border-left: 5px solid #ffcc00;
 }
 
-.horarios li:hover {
+.content-section h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section ul li {
     background: #333;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
+
+.content-section p {
+    max-width: 900px;
+    margin: 0 auto 1rem auto;
+    text-align: justify;
 }
 
 /* ===== Contacto ===== */
-.contacto {
-    background: #1f1f1f;
-    color: #fff;
+.contact-section {
+    background: #333;
     text-align: center;
-    padding: 2rem 1rem;
-    border-top: 2px solid #FFD000;
+    padding: 3rem 1rem;
+    border-top: 4px solid #ffcc00;
 }
 
-.contacto p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+.contact-section h2 {
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
 }
 
-.contacto a {
-    color: #FFD000;
-    text-decoration: none;
-    font-weight: 600;
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
 }
 
-.contacto a:hover {
-    text-decoration: underline;
-}
-
-.social-media {
+.social-links {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.social-media img {
+.social-links img {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.social-media img:hover {
+.social-links img:hover {
     transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 /* ===== Footer ===== */
@@ -205,28 +158,27 @@ footer {
     background: #111;
     color: #fff;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     font-size: 0.9rem;
-    border-top: 2px solid #FFD000;
+    border-top: 2px solid #ffcc00;
 }
 
 /* ===== Responsivo ===== */
 @media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .hero h2 {
+    .hero h1 {
         font-size: 2rem;
     }
 
-    .services-container {
-        grid-template-columns: 1fr;
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .logo img {
+        height: 50px;
     }
 }
