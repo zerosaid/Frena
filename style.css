@@ -1,0 +1,232 @@
+/* ===== Reset general ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #2b2b2b; /* Asfalto */
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* ===== Layout general ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    color: #FFD000; /* Amarillo */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Navegación ===== */
+header {
+    position: sticky;
+    top: 0;
+    background: #1f1f1f; /* Asfalto más oscuro */
+    border-bottom: 2px solid #FFD000;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD000;
+}
+
+/* ===== Hero ===== */
+.hero {
+    background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)),
+        url('img/hero-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #f5f5f5;
+}
+
+/* ===== Botones ===== */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn {
+    background: #FFD000;
+    color: #2b2b2b;
+}
+
+.btn:hover {
+    background: #e5bf00;
+    transform: scale(1.05);
+}
+
+/* ===== Servicios ===== */
+.section {
+    padding: 3rem 1rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #1f1f1f;
+    border: 1px solid #FFD000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: #2f2f2f;
+}
+
+/* ===== Horarios ===== */
+.horarios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.horarios li {
+    background: #1f1f1f;
+    border: 1px solid #FFD000;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.horarios li:hover {
+    background: #333;
+}
+
+/* ===== Contacto ===== */
+.contacto {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 2px solid #FFD000;
+}
+
+.contacto p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contacto a {
+    color: #FFD000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    border-top: 2px solid #FFD000;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
