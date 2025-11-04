@@ -1,31 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // === Menú hamburguesa ===
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-    const accordions = document.querySelectorAll(".accordion-btn");
 
-    // Persistencia del menú
-    const savedState = localStorage.getItem("menuState");
-    if (savedState === "open") navLinks.classList.add("show");
+    // Cargar estado del menú guardado
+    const menuAbierto = localStorage.getItem("menuAbierto") === "true";
+    if (menuAbierto) {
+        navLinks.classList.add("show");
+        menuToggle.classList.add("active");
+    }
 
+    // Evento de clic del botón menú
     menuToggle.addEventListener("click", () => {
         navLinks.classList.toggle("show");
-        localStorage.setItem("menuState", navLinks.classList.contains("show") ? "open" : "closed");
+        menuToggle.classList.toggle("active");
+        localStorage.setItem("menuAbierto", navLinks.classList.contains("show"));
     });
 
-    // Cerrar menú al hacer clic en un enlace
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("show");
-            localStorage.setItem("menuState", "closed");
-        });
-    });
+    // === Acordeones (mostrar/ocultar información) ===
+    const accordionButtons = document.querySelectorAll(".accordion-btn");
 
-    // Acordeones para mostrar/ocultar información
-    accordions.forEach(btn => {
+    accordionButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
-            btn.classList.toggle("active");
             const content = btn.nextElementSibling;
-            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+
+            // Alternar la visibilidad
+            content.classList.toggle("open");
+
+            if (content.classList.contains("open")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+                btn.textContent = "Ocultar información";
+            } else {
+                content.style.maxHeight = null;
+                btn.textContent = "Mostrar información";
+            }
         });
     });
 });
